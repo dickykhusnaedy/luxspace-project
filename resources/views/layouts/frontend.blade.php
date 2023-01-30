@@ -15,7 +15,6 @@
     <link rel="apple-touch-icon" href="{{ url('/frontend/images/content/favicon.png') }}" />
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="{{ url('/frontend/css/main.css') }}" />
     <link rel="icon" href="{{ url('/frontend/images/content/favicon.png') }}" />
 
     <meta name="theme-color" content="#000" />
@@ -24,9 +23,9 @@
 	</head>
 
   <body>
-		@include('components.frontend.header');
-			@yield('content');
-		@include('components.frontend.footer');
+		@include('components.frontend.header')
+			@yield('content')
+		@include('components.frontend.footer')
     <!-- START: LOAD SVG -->
     <!-- <svg width="23" height="26" class="hidden" id="icon-play">
       <path
